@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 90vh;
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff1e6;
+}
+.player__container{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b7b7a4;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
+  
+}
+.cover__container{
+    height: 270px;
+    width: 250px;
+    position: relative;
+   
+}
+.cover__container img{
+    height: 100%;
+    width: 100%;
+    transform: translateY(-30px);
+    position: absolute;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
+}
+.title__container{
+    text-align: center;
+}
+.title__container h3{
+    margin: 10px 0;
+}
+.duration{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.progress{
+    width: 0%;
+    height: 100%;
+    background-color: #525239;
+}
+.progressbar{
+    cursor: pointer;
+    height: 6px;
+    margin: 15px 0;
+    background-color: #fff;
+}
+
+.button__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    
+}
+.volume-bar{
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    background-color: #fff;
+    height: 60px;
+    width: 10px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.volume{
+
+    height: 100%;
+    width: 100%;
+   background-color: #e63946
+}
+span{
+    cursor: pointer;
+    color: #525239;
+}
+span i:hover{
+    filter: brightness(150%);
+}
+span i:active{
+    transform: scale(.9);
+}
+.playbutton{
+    margin: 0 10px;
+}
+.pepeJAM{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%,-50%);
+
+}
+.pepe{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width:700px){
+    .pepeJAM{
+        
+        top: 85%;
+        left: 23%;
+        transform: translate(-50%,-50%);
+    }
+}

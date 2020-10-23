@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cover/pepeJAM.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>PepeJAM Music Player</title>
+</head>
+<body>
+    <div class="pepeJAM"><img class="pepe" src="./cover/tenor.gif" alt=""></div>
+
+    <div class="player__container">
+        <div class="volume-bar"><div class="volume"></div></div>
+        <div class="cover__container">
+            <img  src="" alt="">
+            
+        </div>
+        <div class="title__container">
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="music__container">
+            <audio id="audio"src="./music/Dream lantern.mp3" controls hidden preload="metadata"></audio>
+             <div class="duration">
+                 <p class="start"></p>
+                 <p class="songlength"></p>
+             </div>
+             <div class="progressbar"><div class="progress"></div></div>
+             <div class="button__container">
+                <span class="backwardbutton"><i class="fas fa-backward"></i></span> <span class="playbutton"></i></span> <span class="forwardbutton"><i class="fas fa-forward"></i></span>
+             </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
